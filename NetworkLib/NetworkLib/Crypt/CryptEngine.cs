@@ -33,13 +33,13 @@ namespace NetworkLib.Crypt
 
         public static byte[] Encrypt(byte[] msg, string XMLPublicKey)
         {
-            using (var r = new RSACryptoServiceProvider(256))
+            using (var r = new RSACryptoServiceProvider(1024))
             {
                 try
                 {
                     r.FromXmlString(XMLPublicKey);
-
-                    var enryptData = r.Encrypt(msg, true);
+                    Console.WriteLine(msg.Length);
+                    var enryptData = r.Encrypt(msg, false);
 
                     var base64Encr = Convert.ToBase64String(enryptData);
 
@@ -63,7 +63,7 @@ namespace NetworkLib.Crypt
                     r.ImportParameters(privateKey);
 
                     var res = Convert.FromBase64String(base64);
-                    var decrB = r.Decrypt(res, true);
+                    var decrB = r.Decrypt(res, false);
                     var decrD = Encoding.Default.GetString(decrB);
                     return decrD.ToString();
                 }

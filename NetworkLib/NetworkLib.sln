@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkLib", "NetworkLib\NetworkLib.csproj", "{04B1D521-6C72-4466-88C7-BD7253C7179E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkLib", "NetworkLib\NetworkLib.csproj", "{04B1D521-6C72-4466-88C7-BD7253C7179E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTest", "UTest\UTest.csproj", "{EF2E7D06-C102-4116-9E2F-56BCA27C3452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UTest-Server", "UTest\UTest-Server.csproj", "{EF2E7D06-C102-4116-9E2F-56BCA27C3452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB8F0042-95E1-4989-A268-2B41421392B3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTest-Client", "UTest-Client\UTest-Client.csproj", "{21F25A48-090D-4113-82E9-F9D39856BDFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{EF2E7D06-C102-4116-9E2F-56BCA27C3452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF2E7D06-C102-4116-9E2F-56BCA27C3452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF2E7D06-C102-4116-9E2F-56BCA27C3452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F25A48-090D-4113-82E9-F9D39856BDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F25A48-090D-4113-82E9-F9D39856BDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F25A48-090D-4113-82E9-F9D39856BDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F25A48-090D-4113-82E9-F9D39856BDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
